@@ -69,7 +69,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Spreadsheet Manager</h1>
+      <h1>Spreadsheet</h1>
       <label className="custom-file-upload">
         Upload File
         <input type="file" accept=".xlsx, .xls, .csv" onChange={handleFileUpload} />
