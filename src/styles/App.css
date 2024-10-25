@@ -1,0 +1,47 @@
+.App {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 20px;
+}
+
+.app-header {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.app-toolbar {
+margin-bottom: 20px;
+}
+
+.sheet-container {
+position: relative;
+}
+
+.spreadsheet {
+border-collapse: collapse;
+width: 100%;
+overflow-y: scroll;
+max-height: 500px; /* Adjust as necessary */
+}
+
+.spreadsheet td {
+border: 1px solid #ccc;
+padding: 10px;
+width: 100px; /* Increase cell size */
+height: 40px; /* Increase cell height */
+overflow: hidden;
+}
+
+.footer {
+position: fixed;
+bottom: 0;
+width: 100%;
+background: white;
+border-top: 1px solid #ccc;
+text-align: center;
+padding: 5px;
+}
+
+.footer button {
+margin: 0 5px;
+}

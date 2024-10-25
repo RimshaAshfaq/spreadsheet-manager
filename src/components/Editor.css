@@ -1,0 +1,41 @@
+.editor-container {
+max-height: 400px; /* Adjust as needed */
+overflow-y: auto; /* Enables vertical scrolling */
+}
+
+.header-row {
+display: flex;
+font-weight: bold; /* Make headers bold */
+}
+
+.header-cell {
+flex: 1; /* Allow header cells to grow equally */
+height: auto; /* Auto height based on content */
+border: 1px solid #ccc; /* Optional border for better visibility */
+text-align: center; /* Center the text */
+background-color: #f0f0f0; /* Light gray background for headers */
+padding: 5px; /* Add some padding */
+}
+
+.row {
+display: flex;
+}
+
+.row-number {
+width: 30px; /* Fixed width for row number cells */
+height: auto; /* Auto height based on content */
+display: flex;
+align-items: center; /* Center the number vertically */
+justify-content: center; /* Center the number horizontally */
+border: 1px solid #ccc; /* Optional border for better visibility */
+background-color: #f9f9f9; /* Light gray background for row numbers */
+padding: 5px; /* Add some padding */
+}
+
+.cell-input {
+flex: 1; /* Allow input cells to grow equally */
+height: auto; /* Auto height based on content */
+border: 1px solid #ccc; /* Border for better visibility */
+padding: 5px; /* Add padding for better appearance */
+font-size: 16px; /* Adjust font size */
+}
