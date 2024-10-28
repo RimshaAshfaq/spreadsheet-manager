@@ -222,14 +222,18 @@ const App = () => {
           {selectedRow !== null && (
             <>
               <button onClick={addRowAbove}>Add Row Above</button>
+              <br></br>
               <button onClick={addRowBelow}>Add Row Below</button>
+              <br></br>
               <button onClick={deleteRow}>Delete Row</button>
             </>
           )}
           {selectedColumn !== null && (
             <>
               <button onClick={addColumnLeft}>Add Column Left</button>
+              <br></br>
               <button onClick={addColumnRight}>Add Column Right</button>
+              <br></br>
               <button onClick={deleteColumn}>Delete Column</button>
             </>
           )}
