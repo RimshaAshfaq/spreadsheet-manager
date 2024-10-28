@@ -6,7 +6,7 @@ const App = () => {
   const [data, setData] = useState([Array(35).fill().map(() => Array(15).fill(''))]); 
   const [sheetNames, setSheetNames] = useState(['Sheet1']);
   const [currentSheet, setCurrentSheet] = useState(0);
-  const [isEditable, setIsEditable] = useState(false); // State to toggle edit mode
+  const [isEditable, setIsEditable] = useState(true); // State to toggle edit mode
   const [selectedRow, setSelectedRow] = useState(null); // State for selected row
   const [selectedColumn, setSelectedColumn] = useState(null); // State for selected column
   const [menuPosition, setMenuPosition] = useState({ top: 0, left: 0 }); // Position of the dropdown menu
