@@ -10,41 +10,47 @@
   align-items: center; /* Center items vertically */
 }
 
-.new-sheet-button {
-  margin-right: 10px; /* Space between the new sheet button and sheet name */
-  padding: 5px 10px; /* Button padding */
-  font-size: 14px; /* Font size */
+.button {
+  margin-right: 10px; /* Space between buttons */
+  padding: 8px 12px; /* Uniform button padding */
+  font-size: 14px; /* Consistent font size */
   cursor: pointer; /* Pointer cursor on hover */
   background-color: #007bff; /* Button background color */
   color: white; /* Button text color */
   border: none; /* Remove default border */
   border-radius: 3px; /* Slightly rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  min-width: 100px; /* Set a minimum width for uniform size */
+  text-align: center; /* Center text in button */
 }
 
-.new-sheet-button:hover {
+.button:hover {
   background-color: #0056b3; /* Darker color on hover */
 }
 
 .sheet-name {
   margin-right: 10px; /* Space between sheet name and other buttons */
 }
+
 input[type="file"] {
   display: none; /* Hide the default file input */
 }
 
 .custom-file-upload {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 8px 12px; /* Uniform padding to match buttons */
   cursor: pointer;
   background-color: #007bff; /* Button color */
   color: white; /* Button text color */
   border-radius: 3px; /* Rounded corners */
   margin-bottom: 10px; /* Space below the button */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
 .custom-file-upload:hover {
   background-color: #0056b3; /* Darker color on hover */
 }
+
 .button-group {
   display: flex;
   gap: 10px; /* Space between buttons */
