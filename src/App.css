@@ -15,8 +15,8 @@
   padding: 8px 12px; /* Uniform button padding */
   font-size: 14px; /* Consistent font size */
   cursor: pointer; /* Pointer cursor on hover */
-  background-color: #007bff; /* Button background color */
-  color: white; /* Button text color */
+  background-color: #333; /* Dark grey button background */
+  color: #f0f0f0; /* Light grey button text color */
   border: none; /* Remove default border */
   border-radius: 3px; /* Slightly rounded corners */
   transition: background-color 0.3s; /* Smooth transition for hover effect */
@@ -25,11 +25,12 @@
 }
 
 .button:hover {
-  background-color: #0056b3; /* Darker color on hover */
+  background-color: #666; /* Lighter grey on hover */
 }
 
 .sheet-name {
   margin-right: 10px; /* Space between sheet name and other buttons */
+  color: #fff; /* White for text color */
 }
 
 input[type="file"] {
@@ -40,19 +41,52 @@ input[type="file"] {
   display: inline-block;
   padding: 8px 12px; /* Uniform padding to match buttons */
   cursor: pointer;
-  background-color: #007bff; /* Button color */
-  color: white; /* Button text color */
+  background-color: #333; /* Dark grey button color */
+  color: #f0f0f0; /* Light grey button text color */
   border-radius: 3px; /* Rounded corners */
   margin-bottom: 10px; /* Space below the button */
   transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
 .custom-file-upload:hover {
-  background-color: #0056b3; /* Darker color on hover */
+  background-color: #666; /* Lighter grey on hover */
 }
 
 .button-group {
   display: flex;
   gap: 10px; /* Space between buttons */
   margin-bottom: 10px; /* Space below the button group */
+}
+.scrollable-sheet {
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  max-height: 1000px; /* Set a maximum height for vertical scroll */
+  width: 100%; /* Ensure the sheet container takes the full width */
+  border: 1px solid #ddd; /* Optional: add a border around the sheet */
+}
+
+table {
+  table-layout: fixed; /* Use fixed layout to ensure column widths stay uniform */
+  width: 100%; /* Ensure table takes the full width of the container */
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 4px; /* Reduce padding for a tighter fit */
+  line-height: 1; /* Set line-height to avoid extra spacing */
+  text-align: center;
+  border: 1px solid #ddd;
+  white-space: nowrap; /* Prevent text wrapping in cells */
+  height: 25px; /* Set an explicit height to match row size */
+}
+
+th:first-child,
+td:first-child {
+  width: 50px; /* Smaller width for series column */
+  background-color: #f0f0f0; /* Optional: lighter background for series column */
+  color: #333; /* Darker color for text contrast */
+}
+
+td, th:not(:first-child) {
+  width: 80px; /* Width for other cells */
 }

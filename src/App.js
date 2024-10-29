@@ -3,7 +3,7 @@ import './App.css';
 import * as XLSX from 'xlsx';
 
 const App = () => {
-  const [data, setData] = useState([Array(35).fill().map(() => Array(15).fill(''))]);
+  const [data, setData] = useState([Array(1000).fill().map(() => Array(15).fill(''))]);
   const [sheetNames, setSheetNames] = useState(['Sheet1']);
   const [currentSheet, setCurrentSheet] = useState(0);
   const [isEditable, setIsEditable] = useState(true);
@@ -221,3 +221,7 @@ const App = () => {
 };
 
 export default App;
+
+
+
+
